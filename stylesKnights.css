@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Minecrafter';
+    src: url('Minecraft Title.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'MinecraftSeven-v2';
+    src: url('Minecraft Seven_2.ttf') format('truetype');
+  }
+  
+  *{
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  
+/*NAV BAR ESTILOS*/
+
+#navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:80px;
+    max-width: 100%;
+    background-color:rgba(38, 36, 35, 0.75);
+    backdrop-filter: blur(15px);              
+    -webkit-backdrop-filter: blur(15px);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    padding:0 0;
+    box-shadow: 0 15px 5px rgb(25, 24, 24);
+    z-index: 5;
+}
+
+#navbar h1{
+    font-family: Minecrafter;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #d0c5c0;
+    text-shadow: 
+    5px 5px #000,    
+    4px 4px #555;    
+    letter-spacing: 4px;
+}
+    
+#navbar a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 15px;
+}
+
+#navbar a span{
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.ayuMen{
+    display: none;
+}
+
+.extraI{
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(to bottom, #129b17, #025a06); /* fondo verde */
+    clip-path: polygon(
+        50% 0%, 
+        93% 25%, 
+        93% 75%, 
+        50% 100%, 
+        7% 75%, 
+        7% 25%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#nav-list{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    gap:20px;
+    justify-content: center;
+}
+
+
+#nav-personalList{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    gap:20px;
+    justify-content: center;
+}
+
+#navbar li{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#navbar li a{
+    margin: 15px;
+    font-size: 15px;
+}
+
+#navbar li a:hover{
+    color: #86D562;
+}
